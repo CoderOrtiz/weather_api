@@ -1,0 +1,22 @@
+{
+  "name": "weather_api",
+  "version": "1.0.0",
+  "description": "Building my First API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderOrtiz/weather_api.git"
+  },
+  "author": "Daniel Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderOrtiz/weather_api/issues"
+  },
+  "homepage": "https://github.com/CoderOrtiz/weather_api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
