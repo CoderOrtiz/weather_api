@@ -1,12 +1,16 @@
 // Creates an Express Application
+const { query } = require("express");
 const express = require("express");
 const app = express();
 // Requesting the https Module
 const https = require("https");
 
 app.get("/", function(req, res){
+
+    const query = "Tampa";
+    const apiKey = "90cedd3136fdab5cc381234767da1b37"
     // The URL Gets Us Live Data Using an API
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=Tampa,usa&units=imperial&appid=90cedd3136fdab5cc381234767da1b37";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${query},usa&units=imperial&appid=${apiKey}`;
     
     // Making an "https" Get Request
     https.get(url, function(response){
